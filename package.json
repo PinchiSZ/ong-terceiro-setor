@@ -1,0 +1,17 @@
+{
+  "name": "ong-terceiro-setor",
+  "version": "1.0.0",
+  "description": "Plataforma web do Instituto TEIAS — SPA acessível para ONG do terceiro setor",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  },
+  "author": "André Zrzebiela",
+  "license": "MIT"
+}

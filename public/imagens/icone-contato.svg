@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="128" height="128"
+     role="img" aria-labelledby="icoContato">
+  <title id="icoContato">Contato</title>
+
+  <!-- Envelope -->
+  <rect x="25" y="38" width="50" height="38" rx="4"
+        fill="none" stroke="#2E7D32" stroke-width="3"/>
+
+  <!-- Aba do envelope -->
+  <path d="M25 42 L50 60 L75 42" fill="none" stroke="#2E7D32" stroke-width="2.5"
+        stroke-linejoin="round"/>
+
+  <!-- Nó: onde a mensagem chega -->
+  <circle cx="50" cy="60" r="3.5" fill="#1565C0"/>
+</svg>

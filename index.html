@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Instituto TEIAS — ONG que promove tecnologia, educação, inclusão, acessibilidade e sustentabilidade.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#2E7D32">
+    <title>Instituto TEIAS</title>
+
+    <!-- Silencia avisos do WebStorm sobre âncoras de SPA e CDN externo -->
+    <!--suppress HtmlUnknownAnchorTarget, JSUnresolvedLibraryURL -->
+
+    <!-- Anti-flash do tema: aplica a preferência salva antes de renderizar -->
+    <script>
+    (function () {
+        try {
+            const temaSalvo = localStorage.getItem("teias:tema");
+
+            if (temaSalvo === "escuro" || temaSalvo === "claro") {
+                document.documentElement.setAttribute(
+                    "data-theme",
+                    temaSalvo === "escuro" ? "dark" : "light"
+                );
+                return;
+            }
+
+            const prefereEscuro =
+                window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+            document.documentElement.setAttribute(
+                "data-theme",
+                prefereEscuro ? "dark" : "light"
+            );
+        } catch (e) {}
+    })();
+</script>
+
+    <!-- Biblioteca externa: Chart.js (dashboard de impacto) — defer evita bloqueio -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#app" class="skip-link">Pular para o conteúdo</a>
+
+<button type="button"
+        class="botao-tema"
+        id="botao-tema"
+        aria-label="Ativar tema escuro"
+        aria-pressed="false">
+    <svg class="icone-lua" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+    <svg class="icone-sol" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/>
+        <g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none">
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2"/>
+            <path d="M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41"/>
+            <path d="M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </g>
+    </svg>
+</button>
+
+<header class="cabecalho">
+    <div class="container cabecalho__topo">
+        <img src="imagens/logo-teias.svg" alt="Logo do Instituto TEIAS">
+        <div class="cabecalho__identidade">
+            <h1>Instituto TEIAS</h1>
+            <p>Tecnologia, Educação, Inclusão, Acessibilidade e Sustentabilidade</p>
+        </div>
+    </div>
+
+    <button type="button"
+            class="menu-hamburger"
+            id="menu-hamburger"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="menu-principal" id="menu-principal" aria-label="Navegação principal">
+        <ul>
+            <li><a href="#/home" data-link>Início</a></li>
+            <li><a href="#/projetos" data-link>Projetos</a></li>
+            <li><a href="#/cadastro" data-link>Participe</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contêiner de renderização das views (SPA) -->
+<main id="app" class="container" tabindex="-1">
+    <p>Carregando…</p>
+</main>
+
+<!-- Toast único (fora das views, para não ser recriado a cada troca de rota) -->
+<div class="toast" id="toast" role="status" hidden>
+    <span aria-hidden="true" id="toast-icone">✅</span>
+    <span id="toast-mensagem"></span>
+    <button type="button"
+            class="toast__fechar"
+            aria-label="Fechar notificação"
+            data-toast-fechar>×</button>
+</div>
+
+<footer class="rodape">
+    <div class="container">
+        <div class="rodape__conteudo">
+            <p>© <span id="ano-atual">2026</span> Instituto TEIAS — Tecnologia, Educação, Inclusão, Acessibilidade e Sustentabilidade.</p>
+            <p><a href="mailto:contato@institutoteias.org">contato@institutoteias.org</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- ============================================================
+     TEMPLATE HTML5 — usado por templates.js para gerar cards
+     ============================================================ -->
+<template id="tpl-cartao-projeto">
+    <article class="cartao">
+        <header class="cartao__cabecalho">
+            <div class="titulo-com-icone">
+                <img class="cartao__icone" src="" alt="" aria-hidden="true">
+                <h3 class="cartao__titulo"></h3>
+            </div>
+            <div class="badge-grupo cartao__badges"></div>
+        </header>
+        <div class="cartao__corpo">
+            <p class="cartao__descricao"></p>
+        </div>
+        <footer class="cartao__rodape">
+            <button type="button" class="botao botao--secundario" data-detalhe>Ver detalhes</button>
+        </footer>
+    </article>
+</template>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

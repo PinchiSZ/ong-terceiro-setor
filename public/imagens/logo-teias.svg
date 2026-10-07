@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
+     width="240"
+     height="240"
+     role="img"
+     aria-labelledby="logoTEIAS-t logoTEIAS-d">
+    <title id="logoTEIAS-t">Instituto TEIAS</title>
+    <desc id="logoTEIAS-d">Árvore cuja copa é uma teia de nós, representando tecnologia,
+        educação, inclusão, acessibilidade e sustentabilidade.
+    </desc>
+
+    <!-- Copa = teia (aros e raios) -->
+    <g fill="none" stroke="#2E7D32"
+       stroke-linecap="round">
+        <path d="M21.06 54.27 A42 42 0 0 1 98.94 54.27"
+              stroke-width="3"/>
+        <path d="M33.11 59.14 A29 29 0 0 1 86.89 59.14"
+              stroke-width="2.6"/>
+        <path d="M45.17 64.01 A16 16 0 0 1 74.83 64.01"
+              stroke-width="2.2"/>
+        <g stroke-width="2.2">
+            <path d="M60 70 L60 28"/>
+            <path d="M60 70 L44.27 31.06"/>
+            <path d="M60 70 L75.73 31.06"/>
+            <path d="M60 70 L30.30 40.30"/>
+            <path d="M60 70 L89.70 40.30"/>
+            <path d="M60 70 L21.06 54.27"/>
+            <path d="M60 70 L98.94 54.27"/>
+        </g>
+    </g>
+
+    <!-- Tronco -->
+    <path d="M55.5 66 L64.5 66 C64.5 80 66 89 70.5 98
+           L49.5 98 C54 89 55.5 80 55.5 66 Z" fill="#2E7D32"/>
+
+    <!-- Nós da teia -->
+    <g fill="#2E7D32">
+        <circle cx="44.27" cy="31.06" r="3"/>
+        <circle cx="75.73" cy="31.06" r="3"/>
+        <circle cx="30.30" cy="40.30" r="3"/>
+        <circle cx="89.70" cy="40.30" r="3"/>
+        <circle cx="21.06" cy="54.27" r="3"/>
+        <circle cx="98.94" cy="54.27" r="3"/>
+    </g>
+
+    <!-- Nó tecnológico (topo) -->
+    <circle cx="60"
+            cy="28"
+            r="5.2"
+            fill="#1565C0"/>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

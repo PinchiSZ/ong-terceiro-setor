@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="128" height="128"
+     role="img" aria-labelledby="icoDoacoes">
+  <title id="icoDoacoes">Doações</title>
+
+  <!-- Coração -->
+  <path d="M50 78 C22 56 20 38 36 32 C45 29 50 36 50 42
+           C50 36 55 29 64 32 C80 38 78 56 50 78 Z"
+        fill="none" stroke="#2E7D32" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Nó: o ponto de entrega -->
+  <circle cx="50" cy="78" r="3.5" fill="#1565C0"/>
+</svg>

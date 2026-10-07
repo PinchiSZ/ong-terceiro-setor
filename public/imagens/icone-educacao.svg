@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+     width="128"
+     height="128"
+     role="img"
+     aria-labelledby="icoEducacao">
+    <title id="icoEducacao">Educação</title>
+
+    <!-- Página esquerda -->
+    <path d="M50 30 C40 25 26 25 18 30 V72 C26 67 40 67 50 72"
+          fill="none"
+          stroke="#2E7D32"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Página direita -->
+    <path d="M50 30 C60 25 74 25 82 30 V72 C74 67 60 67 50 72"
+          fill="none"
+          stroke="#2E7D32"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Lombada -->
+    <path d="M50 30 V72"
+          stroke="#2E7D32"
+          stroke-width="2"
+          stroke-linecap="round"/>
+
+    <!-- Linhas de texto (esquerda) -->
+    <g stroke="#1565C0"
+       stroke-width="2"
+       stroke-linecap="round">
+        <path d="M26 42 H44"/>
+        <path d="M26 50 H44"/>
+        <path d="M26 58 H38"/>
+    </g>
+
+    <!-- Linhas de texto (direita) -->
+    <g stroke="#1565C0"
+       stroke-width="2"
+       stroke-linecap="round">
+        <path d="M56 42 H74"/>
+        <path d="M56 50 H74"/>
+        <path d="M62 58 H74"/>
+    </g>
+
+    <!-- Nó da ideia (brota do livro) -->
+    <circle
+            cx="50"
+            cy="22"
+            r="3"
+            fill="#1565C0"/>
+    <path
+            d="M50 25 V30"
+            stroke="#1565C0"
+            stroke-width="2"
+            stroke-linecap="round"/>
+</svg>

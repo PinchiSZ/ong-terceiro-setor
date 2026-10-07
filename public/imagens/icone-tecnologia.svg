@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect
+            x="30"
+            y="30"
+            width="40"
+            height="40"
+            rx="5"
+            fill="none"
+            stroke="#2E7D32"
+            stroke-width="3"
+    />
+
+    <path
+            d="M40 50 H50 V40 H60"
+            fill="none"
+            stroke="#1565C0"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+
+    <path
+            d="M40 60 H50 V50 H60"
+            fill="none"
+            stroke="#1565C0"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+
+    <path
+            d="M30 38 H22
+       M30 50 H22
+       M30 62 H22
+       M70 38 H78
+       M70 50 H78
+       M70 62 H78"
+            fill="none"
+            stroke="#2E7D32"
+            stroke-width="2"
+            stroke-linecap="round"
+    />
+
+    <circle cx="22" cy="38" r="2" fill="#1565C0"/>
+    <circle cx="22" cy="50" r="2" fill="#1565C0"/>
+    <circle cx="22" cy="62" r="2" fill="#1565C0"/>
+
+    <circle cx="78" cy="38" r="2" fill="#1565C0"/>
+    <circle cx="78" cy="50" r="2" fill="#1565C0"/>
+    <circle cx="78" cy="62" r="2" fill="#1565C0"/>
+
+</svg>

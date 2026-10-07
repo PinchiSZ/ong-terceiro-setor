@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+     width="128"
+     height="128"
+     role="img" aria-labelledby="icoSustentabilidade">
+    <title id="icoSustentabilidade">Meio ambiente e sustentabilidade</title>
+
+    <!-- Ciclo sustentável (setas circulares) -->
+    <g fill="none"
+       stroke="#1565C0"
+       stroke-width="4"
+       stroke-linecap="round">
+        <path d="M12.41 36.32 A40 40 0 0 1 87.59 36.32"/>
+        <path d="M87.59 63.68 A40 40 0 0 1 12.41 63.68"/>
+    </g>
+    <!-- Pontas das setas -->
+    <g fill="#1565C0">
+        <path d="M89.64 41.96 L82.21 36.15 L91.61 32.73 Z"/>
+        <path d="M10.36 58.04 L17.79 63.85 L8.39 67.27 Z"/>
+    </g>
+
+    <!-- Folha -->
+    <path d="M50 22 C30 40 30 62 50 80 C70 62 70 40 50 22 Z"
+          fill="#2E7D32"/>
+    <g fill="none"
+       stroke="#FFFFFF"
+       stroke-linecap="round"
+       opacity="0.9">
+        <path d="M50 28 V74"
+              stroke-width="2.5"/>
+        <path d="M50 42 L42 36 M50 42 L58 36 M50 57 L43 52 M50 57 L57 52"
+              stroke-width="2"/>
+    </g>
+</svg>

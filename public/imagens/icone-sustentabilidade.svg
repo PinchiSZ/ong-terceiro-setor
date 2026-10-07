@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- Caule -->
+    <path
+            d="M50 75 C50 62 50 50 54 38"
+            fill="none"
+            stroke="#2E7D32"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+
+    <!-- Folha -->
+    <path
+            d="M54 38 C58 27 70 22 78 24 C76 35 68 43 54 38 Z"
+            fill="none"
+            stroke="#2E7D32"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+
+    <!-- Nervura da folha -->
+    <path
+            d="M54 38 C61 34 68 30 76 26"
+            fill="none"
+            stroke="#1565C0"
+            stroke-width="2"
+            stroke-linecap="round"
+    />
+
+    <!-- Conexão tecnológica -->
+    <path
+            d="M50 62 H40 L35 57 H29"
+            fill="none"
+            stroke="#1565C0"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+
+    <circle
+            cx="29"
+            cy="57"
+            r="2"
+            fill="#1565C0"
+    />
+
+</svg>
