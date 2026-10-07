@@ -79,8 +79,11 @@ export function iniciarRouter(container, callbacks = {}) {
              */
             container.focus();
 
+            const prefereMovimentoReduzido =
+                window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
             container.scrollIntoView({
-                behavior: "smooth",
+                behavior: prefereMovimentoReduzido ? "auto" : "smooth",
                 block: "start"
             });
 
