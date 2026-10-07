@@ -378,8 +378,11 @@ export function inicializarValidacao(aoEnviar) {
 
             primeiroErro.focus();
 
+            const prefereMovimentoReduzido =
+                window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
             primeiroErro.scrollIntoView({
-                behavior: "smooth",
+                behavior: prefereMovimentoReduzido ? "auto" : "smooth",
                 block: "center"
             });
 
