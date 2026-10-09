@@ -172,6 +172,20 @@ Validação do formulário
 Persistência no localStorage
 Navegação entre as views
 Responsividade em diferentes tamanhos de tela
+
+### Testes de movimento reduzido
+
+Para verificar o suporte à preferência `prefers-reduced-motion`, compare o comportamento da aplicação com a preferência desativada e ativada.
+
+1. Inicie a aplicação com `npm run dev`.
+2. Abra as ferramentas de desenvolvedor do navegador e acesse a opção de emulação de recursos de renderização (`Rendering`).
+3. Emule a preferência `prefers-reduced-motion: no-preference` e navegue entre as views. A rolagem deve ocorrer suavemente.
+4. Emule `prefers-reduced-motion: reduce` e repita a navegação. A rolagem deve ocorrer sem animação suave.
+5. Com a preferência reduzida ativada, envie o formulário com um campo obrigatório inválido. A página deve direcionar o usuário ao primeiro erro sem rolagem animada.
+6. Repita o teste com a preferência desativada e confirme que a rolagem suave permanece disponível.
+
+Compare os resultados nos dois cenários e verifique se os erros do formulário continuam identificados corretamente.
+
 ♿ Acessibilidade
 
 O projeto foi desenvolvido adotando práticas de acessibilidade alinhadas
