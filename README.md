@@ -70,8 +70,8 @@ ong-terceiro-setor/
 │   │   └── icone-voluntariado.svg
 │   │
 │   └── fontes/                 # Fontes utilizadas na interface
-│       ├── AtkinsonHyperlegible-Regular.ttf
-│       └── AtkinsonHyperlegible-Bold.ttf
+│       ├── AtkinsonHyperlegible-Regular.woff2
+│       └── AtkinsonHyperlegible-Bold.woff2
 │
 ├── css/
 │   └── style.css               # Estilos, temas e responsividade
@@ -291,8 +291,8 @@ ong-terceiro-setor/
 │   │   └── icone-voluntariado.svg
 │   │
 │   └── fontes/                 # Fonts used by the interface
-│       ├── AtkinsonHyperlegible-Regular.ttf
-│       └── AtkinsonHyperlegible-Bold.ttf
+│       ├── AtkinsonHyperlegible-Regular.woff2
+│       └── AtkinsonHyperlegible-Bold.woff2
 │
 ├── css/
 │   └── style.css               # Styling, themes and responsiveness
