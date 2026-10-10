@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: "/ong-terceiro-setor/",
+    base: "/",
     publicDir: "public",
     build: {
         outDir: "dist",

@@ -4,8 +4,9 @@
    DESCRIÇÃO: Alternância entre tema claro e escuro, com
               persistência em localStorage.
    ============================================================ */
-
+import { renderizarGraficos } from "./graficos.js";
 import { salvar, carregar } from "./storage.js";
+
 
 export function aplicarTemaSalvo() {
     const tema = carregar("tema");
@@ -71,5 +72,6 @@ export function inicializarBotaoTema() {
             "tema",
             proximo === "dark" ? "escuro" : "claro"
         );
+        renderizarGraficos();
     });
 }

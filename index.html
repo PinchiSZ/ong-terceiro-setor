@@ -37,7 +37,11 @@
 </script>
 
     <!-- Biblioteca externa: Chart.js (dashboard de impacto) — defer evita bloqueio -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+
+    <link rel="preload" href="fontes/AtkinsonHyperlegible-Regular.woff2"
+      as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fontes/AtkinsonHyperlegible-Bold.woff2"
+      as="font" type="font/woff2" crossorigin>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -65,7 +69,14 @@
 
 <header class="cabecalho">
     <div class="container cabecalho__topo">
-        <img src="imagens/logo-teias.svg" alt="Logo do Instituto TEIAS">
+
+<img
+    src="imagens/logo-teias.svg"
+    alt="Logo do Instituto TEIAS"
+    width="120"
+    height="120"
+>
+
         <div class="cabecalho__identidade">
             <h1>Instituto TEIAS</h1>
             <p>Tecnologia, Educação, Inclusão, Acessibilidade e Sustentabilidade</p>
@@ -91,9 +102,14 @@
 </header>
 
 <!-- Contêiner de renderização das views (SPA) -->
-<main id="app" class="container" tabindex="-1">
-    <p>Carregando…</p>
+
+<main id="app" class="container" tabindex="-1" aria-busy="true">
+    <section class="secao" aria-label="Carregamento inicial">
+        <h1>Instituto TEIAS</h1>
+        <p>Carregando o conteúdo da página…</p>
+    </section>
 </main>
+
 
 <!-- Toast único (fora das views, para não ser recriado a cada troca de rota) -->
 <div class="toast" id="toast" role="status" hidden>
