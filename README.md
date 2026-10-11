@@ -111,17 +111,6 @@ ong-terceiro-setor/
 * **`node_modules/`** — contém as dependências instaladas pelo npm e também não é versionado no Git.
 
 
-### 🧩 Organização dos principais diretórios
-
-* **`public/`** — reúne os arquivos estáticos disponibilizados diretamente pela aplicação, como páginas HTML, imagens, ícones e fontes.
-* **`css/`** — concentra os estilos visuais da aplicação, incluindo layout, responsividade, acessibilidade e os temas claro e escuro.
-* **`js/`** — contém a lógica principal da aplicação.
-* **`js/modulos/`** — organiza as funcionalidades JavaScript em módulos independentes, facilitando a manutenção e a separação de responsabilidades.
-* **`dist/`** — diretório gerado automaticamente pelo Vite durante o build de produção. Não é versionado no Git.
-* **`node_modules/`** — contém as dependências instaladas pelo npm e também não é versionado no Git.
-
-
-
 ✅ Pré-requisitos
 Node.js compatível com o Vite 8
 Git
