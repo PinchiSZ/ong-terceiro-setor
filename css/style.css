@@ -969,6 +969,16 @@ p {
     color: var(--texto-azul-acessivel);
 }
 
+/* Preserva o contraste dos botões primários no tema escuro */
+:root[data-theme="dark"] a.botao--primario {
+    color: #FFFFFF;
+}
+
+/* Mensagens de erro acessíveis no tema escuro */
+:root[data-theme="dark"] .mensagem-erro {
+    color: #FF8A80;
+}
+
 /* A navegação usa verde-claro sobre verde-escuro */
 :root[data-theme="dark"] .menu-principal a {
     color: #A5D6A7;
